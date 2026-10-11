@@ -1,1 +1,22 @@
-/* Initializing */
+/* highlighting every container, make text visible*/
+
+div {
+    border: double cornflowerblue;
+    font-size:xx-large;
+}
+
+/****** REQUIRED FRAMEWORK FOR CLASS ******/
+* {
+    box-sizing: border-box;
+}
+[class*="col"] {
+    float: left;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/****** REQUIRED FRAMEWORK FOR CLASS ******/
+
+/* Start new styles below */
