@@ -2,7 +2,7 @@
 
 div {
     border: double cornflowerblue;
-    font-size:xx-large;
+    /* font-size:xx-large; */
 }
 
 /****** REQUIRED FRAMEWORK FOR CLASS ******/
@@ -11,6 +11,7 @@ div {
 }
 [class*="col"] {
     float: left;
+    /* color: red; */
 }
 .row::after {
     content: "";
@@ -20,3 +21,201 @@ div {
 /****** REQUIRED FRAMEWORK FOR CLASS ******/
 
 /* Start new styles below */
+
+/* body {
+    zoom: 0.5;
+} */
+
+body {
+    background-image: linear-gradient(#b46,#ff0) /*url(../images/kitchen-bg.jpg)*/;
+    background: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+
+}
+
+h1 {
+    font-size: 25px;
+    border: solid black 1px;
+    border-top: 0;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 300px;
+    text-wrap: pretty;
+    margin: 10px;
+}
+
+h2 {
+    background: #ddda;
+    color: #321;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#header p {
+    background-color: #ddd9;
+    border-radius: 0.2em;
+    margin: 10px;
+    text-align: center;
+}
+
+.empty { /*emptyparagraph*/
+    background-color: none;
+    color: none;
+    border: none;
+}
+
+p.right-align {
+    text-align: right;
+}
+
+p.align-left {
+    text-align: left;
+}
+
+p.link-credit {
+    font-size: 0.5em;
+    max-width: 250px;
+    background-color: #9863;
+}
+
+figure {
+    background-color: #986a;
+    border-radius: 0.3rem;
+    padding: 1em;
+    max-width: 550px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+img {
+    padding: 5px;
+    background-color: #000;
+    border-radius: 0.5em 0.5em 0 0;
+    max-width: 100%;
+    min-width: 75px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 5px;
+    background-color: #3219;
+    border-radius: 0 0 0.5em;
+    color: #ddd;
+    max-width: 100%;
+    min-width: 75px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #cdfa;
+}
+
+/* jump to list items */
+ul {
+    background-color: #321b;
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 10px; 
+    /* flex-grow: 1; no flex yet */
+}
+
+li {
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+/* back to form items */
+
+form {
+    border: solid #3212 2px;
+    border-radius: 0.3rem;
+    color: #421;
+    background-color: #986a;
+    padding: 5px 0px 5px 0;
+    
+    /* flex: 1; no flex yet */
+}
+
+fieldset{
+    border: solid #3219 2px;
+    background-color: #0002;
+    border-radius: 0.2em;
+}
+
+input{
+    background-color: #986b;
+}
+
+::placeholder {
+    font-style: italic;
+    color: #0006;
+}
+
+legend {
+    border-radius: 0.3em;
+    border: solid #421 2px;
+    border-top: 0px;
+    padding: 2px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #000;
+}
+
+/* Primarily footer items, excluding align. */
+
+div#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: 2px solid black;
+    /* Probably grid here */
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+
+    font-size: 10px;
+    /* justify-items: center; */
+}
+
+span.highlight { /*New span item*/
+    background-color: #db67;
+}
+
+#footer p {
+    background-color: #fffb;
+    border: solid #0007 1px;
+    border-radius: 2px;
+    color: #321;
+    padding: 1px 15px;
+    min-width: fit-content;
+    /* flex: 1 auto; No flex*/
+}
+#footer>p.just-start {
+    justify-self: start;
+
+}
+#footer>p.just-center {
+    justify-self: center;
+    text-align: center;
+
+}
+#footer>p.just-end {
+    justify-self: end;
+    }
+
+#footer a {
+    text-decoration: none;
+    color: #123a;
+}
