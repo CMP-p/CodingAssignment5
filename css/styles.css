@@ -1,9 +1,24 @@
-/* highlighting every container, make text visible*/
+/* 
+Color Pallete
 
-div {
+Arrowtown
+#9a866e or #986 or rgb(154, 134, 110)
+
+Birch
+#31281d or #321 or rgb(049, 040, 029)
+
+Quill Gray
+#d4d4d2 or #ddd or rgb(212, 212, 210)
+
+Irish Coffee
+#543623 or #532 or rgb(084, 054, 035)
+ */
+
+/* Professor P. Duncan's div highlighter, make text visible*/
+ /*div {
     border: double cornflowerblue;
-    /* font-size:xx-large; */
-}
+    /* font-size:xx-large; *\\\
+} */
 
 /****** REQUIRED FRAMEWORK FOR CLASS ******/
 * {
@@ -18,7 +33,7 @@ div {
     clear: both;
     display: block;
 }
-/****** REQUIRED FRAMEWORK FOR CLASS ******/
+/****** ^^^ REQUIRED FRAMEWORK FOR CLASS ^^^ ******/
 
 /* Start new styles below */
 
@@ -27,24 +42,34 @@ div {
 } */
 
 body {
-    background-image: linear-gradient(#b46,#ff0) /*url(../images/kitchen-bg.jpg)*/;
+    background-image: url(../images/kitchen-bg.jpg);
     background: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0px;
+    margin: 5px;
 
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 42px;
+    font-family: Verdana, sans-serif;
     border: solid black 1px;
     border-top: 0;
     border-radius: 10px;
     text-align: left;
-    max-width: 300px;
+    max-width: 50%;
+    min-width: min-content;
     text-wrap: pretty;
     margin: 10px;
+}
+
+div#header p {
+    background-color: #ddd9;
+    text-align: center;
+    margin: 10px;
+    border-radius: 0.2em;
+    max-width: fit-content;
 }
 
 h2 {
@@ -55,25 +80,41 @@ h2 {
     margin: 10px;
 }
 
-div#header p {
-    background-color: #ddd9;
-    border-radius: 0.2em;
-    margin: 10px;
-    text-align: center;
-}
-
 .col-3 {
     display: flex;
     justify-content: center;
 }
 
-.links{
+/* .col-2 {
+
+} */
+
+section {
+    background-color: #321d;
+    border-radius: 0.3em;
+    margin-top: 10px;
+    /* margin-left: 10px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+p.links{
     background-color: #ddd4;
     border: 1px inset #532;
+    text-align: center;
+
     padding: 5px;
     margin: 20px;
-    max-width: 150px;
-    text-align: center;
+    min-width: 85px;
+    width: 65%;
+}
+
+.links>a {
+    color: #ddd;
+    background-color: rgb(154, 134, 110);
+    padding: 2px;
 }
 
 .empty { /*emptyparagraph*/
@@ -96,11 +137,12 @@ p.link-credit {
     background-color: #9863;
 }
 
-figure {
+div>figure {
     background-color: #986a;
     border-radius: 0.3rem;
     padding: 1em;
     max-width: 550px;
+    margin: 10px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -112,7 +154,7 @@ img {
     background-color: #000;
     border-radius: 0.5em 0.5em 0 0;
     max-width: 100%;
-    min-width: 75px;
+    min-width: 255px;
 }
 
 figcaption {
@@ -135,6 +177,7 @@ ul {
     border-radius: 0.5em;
     text-align: center;
     padding: 30px 20px;
+    margin: 8px 8px 8px 8px;
     margin-bottom: 10px; 
     /* flex-grow: 1; no flex yet */
 }
@@ -142,6 +185,11 @@ ul {
 li {
     color: #ddd;
     margin-bottom: 15px;
+}
+
+li>span{
+    font-weight: bold;
+    font-size: large;
 }
 
 /* back to form items */
@@ -190,14 +238,15 @@ div#footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    border: 2px solid black;
+    border: 1px inset black;
     /* Probably grid here */
 
     /* display: flex; */
     /* flex-direction: row; */
     /* flex-wrap: wrap; */
 
-    font-size: 10px;
+    font-size: 12px;
+    padding: 3px;
     /* justify-items: center; */
 }
 
