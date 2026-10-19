@@ -1,16 +1,16 @@
 /* 
 Color Pallete
 
-Arrowtown
+Arrowtown - light brown     >>>> #CBA471
 #9a866e or #986 or rgb(154, 134, 110)
 
-Birch
+Birch - vdark brown >>>> #3C2D28
 #31281d or #321 or rgb(049, 040, 029)
 
-Quill Gray
+Quill Gray - light gray     >>>> #8DB8D3 or #6D85A3
 #d4d4d2 or #ddd or rgb(212, 212, 210)
 
-Irish Coffee
+Irish Coffee deep brown     >>>> Kept, it looks nice
 #543623 or #532 or rgb(084, 054, 035)
  */
 
@@ -42,22 +42,30 @@ Irish Coffee
 } */
 
 body {
-    background-image: url(../images/kitchen-bg.jpg);
+    background-image: url(../images/new-kitchen-bg.jpg);
     background: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     margin: 5px;
+    
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
 h1 {
-    font-size: 42px;
-    font-family: Verdana, sans-serif;
-    border: solid black 1px;
-    border-top: 0;
-    border-radius: 10px;
-    text-align: left;
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    color: #ddd;
+    text-shadow: #000 1px 1px 4px;
+
+    border: 2px solid rgb(173, 113, 2);
+    border-left: none;
+    border-right: none;
+    border-radius: 4px;
+    justify-self: end;
     max-width: 50%;
     min-width: min-content;
     text-wrap: pretty;
@@ -65,8 +73,8 @@ h1 {
 }
 
 div#header p {
-    background-color: #ddd9;
-    text-align: center;
+    background-color: #8DB8D390;
+    text-align: right;
     margin: 10px;
     border-radius: 0.2em;
     max-width: fit-content;
@@ -74,7 +82,7 @@ div#header p {
 
 h2 {
     background: #ddda;
-    color: #321;
+    color: #3C2D28;
     border-radius: 5px;
     text-align: center;
     margin: 10px;
@@ -89,9 +97,10 @@ h2 {
 
 } */
 
-section {
+section, .col-4 {
     background-color: #321d;
     border-radius: 0.3em;
+    padding: 5px;
     margin-top: 10px;
     /* margin-left: 10px; */
 
@@ -101,7 +110,7 @@ section {
 }
 
 p.links{
-    background-color: #ddd4;
+    background-color: #8DB8D340;
     border: 1px inset #532;
     text-align: center;
 
@@ -112,8 +121,8 @@ p.links{
 }
 
 .links>a {
-    color: #ddd;
-    background-color: rgb(154, 134, 110);
+    color: #DDD;
+    background-color: #CBA471;
     padding: 2px;
 }
 
@@ -134,11 +143,11 @@ p.align-left {
 p.link-credit {
     font-size: 0.5em;
     max-width: 250px;
-    background-color: #9863;
+    background-color: #CBA47130;
 }
 
 div>figure {
-    background-color: #986a;
+    background-color: #CBA471a0;
     border-radius: 0.3rem;
     padding: 1em;
     max-width: 550px;
@@ -160,9 +169,9 @@ img {
 figcaption {
     text-align: center;
     padding: 5px;
-    background-color: #3219;
+    background-color: #3C2D2890;
     border-radius: 0 0 0.5em;
-    color: #ddd;
+    color: #8DB8D3;
     width: 100%;
 }
 
@@ -173,7 +182,7 @@ a {
 
 /* jump to list items */
 ul {
-    background-color: #321b;
+    background-color: #3C2D28b0;
     border-radius: 0.5em;
     text-align: center;
     padding: 30px 20px;
@@ -183,8 +192,14 @@ ul {
 }
 
 li {
-    color: #ddd;
+    color: #bbb;
     margin-bottom: 15px;
+    font-size: 20px;
+    text-shadow: #000 1px 1px;
+    font-family: "Cantarell", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 li>span{
@@ -195,23 +210,23 @@ li>span{
 /* back to form items */
 
 form {
-    border: solid #3212 2px;
+    border: solid #3C2D2866 2px;
     border-radius: 0.3rem;
     color: #421;
-    background-color: #986a;
+    background-color: #CBA471a0;
     padding: 5px 0px 5px 0;
     
     /* flex: 1; no flex yet */
 }
 
 fieldset{
-    border: solid #3219 2px;
+    border: solid #3C2D2890 2px;
     background-color: #0002;
     border-radius: 0.2em;
 }
 
 input{
-    background-color: #986b;
+    background-color: #CBA471b0;
 }
 
 ::placeholder {
@@ -258,7 +273,7 @@ span.highlight { /*New span item*/
     background-color: #fffb;
     border: solid #0007 1px;
     border-radius: 2px;
-    color: #321;
+    color: #3C2D28;
     padding: 1px 15px;
     min-width: fit-content;
     /* flex: 1 auto; No flex*/
